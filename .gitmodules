@@ -1,0 +1,3 @@
+[submodule "reqresapi"]
+	path = reqresapi
+	url = https://github.com/sorabh2008/reqresapi
