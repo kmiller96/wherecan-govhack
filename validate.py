@@ -8,4 +8,4 @@ def val(lat: float, lon: float) -> bool:
         raise Exception("OSM Error: " + str(response.status_code))
 
     response = response.json()
-    return len(response["address"]) > 7
+    return "house_number" in response["address"]
