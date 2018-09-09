@@ -31,21 +31,37 @@ async def complete(q, tasks):
         q.put(await res)
         
 
-def val(locs: list) -> list:
+def inner_val(locs: list) -> list:
     q = queue.Queue()
+    length = len(locs)
 
     methods = []
-    for i in range(len(locs)):
+    for i in range(length):
         methods.append(__val(i, locs[i][0], locs[i][1]))
 
     loop = asyncio.get_event_loop()
     loop.run_until_complete(complete(q, methods))
 
     response = []
-    for i in range(len(locs)):
+    for i in range(length):
         response.append(None)
 
-    for ret in queue_get_all(q, len(locs)):
+    for ret in queue_get_all(q, length):
         response[ret[0]] = ret[1]
 
     return response
+
+def val(locs: list) -> list:
+    total_length = len(locs)
+    left = total_length
+    index = 0
+    res = []
+    size = 64
+
+    while (left > size):
+        res.extend(inner_val(locs[index:size]))
+        left -= size
+        index += size
+
+    res.extend(inner_val(locs[index:]))
+    return res
