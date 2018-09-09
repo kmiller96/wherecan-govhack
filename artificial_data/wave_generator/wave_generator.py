@@ -1,14 +1,13 @@
 import numpy as np
-import pandas as pd
 
-MELBOURNE_CENTER_LAT = -37.815018   # North, South
-MELBOURNE_CENTER_LONG = ‎144.946014  # East, West
+MELBOURNE_CENTER_LAT = -37.815018
+MELBOURNE_CENTER_LONG = 144.946014
 
 BAND_FUNCTION_DEFAULT_SCALAR = 100
 BAND_FUNCTION_DEFAULT_TIMECONST = 10
 
 X0_START = 0  # Starts at the center of the city
-X0_SCALAR_CONST = 1000  # Rate at which the x0 shifts
+X0_SCALAR_CONST = 10  # Rate at which the x0 shifts
 
 def band_function(x, x0, a=BAND_FUNCTION_DEFAULT_SCALAR, b=BAND_FUNCTION_DEFAULT_TIMECONST):
     """Computes the band function."""
@@ -23,8 +22,8 @@ def x0_func(t):
 def relativevector2latlon(vec):
     """Turns a relative vector (x, y) into (lat, long) tuple."""
     x, y = vec
-    lat = MELBOURNE_CENTER_LAT + y/111111
-    long = MELBOURNE_CENTER_LONG + x/(111111*np.cos(MELBOURNE_CENTER_LAT))
+    lat = MELBOURNE_CENTER_LAT + float(y)/111111
+    long = MELBOURNE_CENTER_LONG + float(x)/(111111*np.cos(MELBOURNE_CENTER_LAT))
     return (lat, long)
 
 
@@ -35,9 +34,14 @@ def generate_markers(year):
         unit_vector = (np.cos(deg), np.sin(deg))
         for x_step in np.linspace(0, 1e5, 1000):
             band_output = band_function(x_step, x0_func(year))
-            marker_coord = relativevector2latlon(
-                band_output*unit_vector[0]*x_step,
-                band_output*unit_vector[1]*x_step
-            )
-            markers.append(marker_coord)
+            marker_coord = relativevector2latlon((
+                unit_vector[0]*x_step,
+                unit_vector[1]*x_step
+            ))
+            [markers.append(marker_coord) for _ in range(int(band_output))]
     return markers
+
+
+if __name__ == '__main__':
+    markers = generate_markers(2020)
+    print(markers[0], markers[int(len(markers)*0.5)])
