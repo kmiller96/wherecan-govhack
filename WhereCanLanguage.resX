@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="JyNEyqvgvkaTcrkhAx47Hg#Title.-276359932.1" xml:space="preserve">
+    <value>Custom Enterprise Web Application Development Platform</value>
+  <comment>WhereCan / Common / Footer / Container / Link</comment></data>
+  <data name="OrILPzfjN0uyLJKoO9fHZA#Value" xml:space="preserve">
+    <value>Altus</value>
+  <comment>WhereCan / Common / Footer / Container / Link / Text - Value</comment></data>
+  <data name="YOg2w1DIhU2HHSQrIXkKLA#Title.-2056206619.1" xml:space="preserve">
+    <value>Internal Error</value>
+  <comment>WhereCan / Common / InternalError</comment></data>
+  <data name="uEs3EGYkmkS5+odAoFQViw#Value" xml:space="preserve">
+    <value>Internal Error</value>
+  <comment>WhereCan / Common / InternalError / Web Block / Title / Text - Value</comment></data>
+  <data name="oe1lOVgbnEKdrWhBM3MUJw#Title.398378907.1" xml:space="preserve">
+    <value>Invalid Permissions</value>
+  <comment>WhereCan / Common / InvalidPermissions</comment></data>
+  <data name="KOtRojJlc0ymRa2CRBvGQQ#Value" xml:space="preserve">
+    <value>Invalid Permissions</value>
+  <comment>WhereCan / Common / InvalidPermissions / Web Block / Title / Text - Value</comment></data>
+  <data name="b9efk_29I0uE07fO+1sFDQ#Title.73596745.1" xml:space="preserve">
+    <value>Login</value>
+  <comment>WhereCan / Common / Login</comment></data>
+  <data name="NIQgqzBwGkCXN3gW4I9W9w#Label.73596745.1" xml:space="preserve">
+    <value>Login</value>
+  <comment>WhereCan / Common / Login / Web Block / Action / LoginButton</comment></data>
+  <data name="gKTYL3LUGkWEy8Yk4669pA#Prompt.-201069322.1" xml:space="preserve">
+    <value>Username</value>
+  <comment>WhereCan / Common / Login / Web Block / Username / UserNameInput</comment></data>
+  <data name="HHhVy8gCsEWW1mY5DjmiJQ#Title.-1180696926.1" xml:space="preserve">
+    <value>My Info</value>
+  <comment>WhereCan / Common / MyInfo</comment></data>
+  <data name="aPSmlDVmz0uRNBXUEPTDkw#Value" xml:space="preserve">
+    <value>My Info</value>
+  <comment>WhereCan / Common / MyInfo / Web Block / Title / Text - Value</comment></data>
+  <data name="1_yZ1ODHZ0KHQsAo75_BEg#Value" xml:space="preserve">
+    <value>Start</value>
+  <comment>WhereCan / MainFlow / HomePage / Web Block / MainContent / WIZARD / Container / Web Block / Step1 / Text - Value</comment></data>
+  <data name="PXoXJy8V1kSg2zaKyuusdw#Value" xml:space="preserve">
+    <value>Insight</value>
+  <comment>WhereCan / MainFlow / HomePage / Web Block / MainContent / WIZARD / Container / Web Block / Step2 / Text - Value</comment></data>
+  <data name="brXnj2ysG0GjlvyspIgs5w#Value" xml:space="preserve">
+    <value>Scorecard</value>
+  <comment>WhereCan / MainFlow / HomePage / Web Block / MainContent / WIZARD / Container / Web Block / Step3 / Text - Value</comment></data>
+  <data name="MA2payaXsU6RzyKG4O9cLw#Label.2424595.1" xml:space="preserve">
+    <value>Next</value>
+  <comment>WhereCan / MainFlow / InsightBlock / Container / Button</comment></data>
+  <data name="yTJeUguUA0KKKik1iMUcvw#Label.2496083.1" xml:space="preserve">
+    <value>Prev</value>
+  <comment>WhereCan / MainFlow / InsightBlock / Container / Button</comment></data>
+  <data name="sfDY5xtnOUSCXKCsbPVrqg#Value" xml:space="preserve">
+    <value>Year</value>
+  <comment>WhereCan / MainFlow / InsightBlock / Container / Web Block / Column1 / Container / YearFilter / Label / Text - Value</comment></data>
+  <data name="3qbV1p9QBkSdAFYjyI5vcw#Value" xml:space="preserve">
+    <value>Future Insights</value>
+  <comment>WhereCan / MainFlow / InsightBlock / Container / Web Block / Column2 / Container / Container / PredictionsFilter / Label / Text - Value</comment></data>
+  <data name="66vCJ4Ohj0GTxMGKRdYm2Q#Label.2496083.1" xml:space="preserve">
+    <value>Prev</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Button</comment></data>
+  <data name="CR1OWTf46U6hGGp7jOeLlw#Label.2424595.1" xml:space="preserve">
+    <value>Next</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Button</comment></data>
+  <data name="6SViz2TIl06qdE8e7iFcjw#Value" xml:space="preserve">
+    <value>Similar Business</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Label / Text - Value</comment></data>
+  <data name="cpRhbc3_UE6u3jdGL5cDpw#Value" xml:space="preserve">
+    <value>Average Rent/pm (200sqm)</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Label / Text - Value</comment></data>
+  <data name="e88Yj0QABkacVyGMtOJnyA#Value" xml:space="preserve">
+    <value>Average Income $</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Label / Text - Value</comment></data>
+  <data name="f2sa56OLG0auxs_fCaoEtA#Value" xml:space="preserve">
+    <value>2001 - 2010</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Label / Text - Value</comment></data>
+  <data name="GELkw8T07EKVqAp3wr36OA#Value" xml:space="preserve">
+    <value>Potential Partners</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Label / Text - Value</comment></data>
+  <data name="LpP5A+tCGUyWpPxZiHoXEg#Value" xml:space="preserve">
+    <value>2011 - 2018</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Label / Text - Value</comment></data>
+  <data name="SceoB0uZ4k+IeIehTXngZw#Value" xml:space="preserve">
+    <value>1900 - 2000</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Label / Text - Value</comment></data>
+  <data name="vnQu4aCJu0enQy7xSH+TsQ#Value" xml:space="preserve">
+    <value>Utilitles/pm $</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Label / Text - Value</comment></data>
+  <data name="z2tPYVlSaUG5bKKlGTgrEg#Value" xml:space="preserve">
+    <value>Age 20 - 34</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Label / Text - Value</comment></data>
+  <data name="6k8n+mDjL0WMjK3gVIfWgA#Value" xml:space="preserve">
+    <value>62547</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Number / Text - Value</comment></data>
+  <data name="6TjmYEIEM062Np1MbF_gnA#Value" xml:space="preserve">
+    <value>5</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Number / Text - Value</comment></data>
+  <data name="k5+_y6fBnkOVAQ+kDe1hHg#Value" xml:space="preserve">
+    <value>7</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Number / Text - Value</comment></data>
+  <data name="UOroB0fYFEaadhH1f6LMOg#Value" xml:space="preserve">
+    <value>25354</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Number / Text - Value</comment></data>
+  <data name="UYJR48D2bkKnkQWcdON3mQ#Value" xml:space="preserve">
+    <value>5</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Number / Text - Value</comment></data>
+  <data name="V9NiHYMofUKNf2W+3gP7Jg#Value" xml:space="preserve">
+    <value>20</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Number / Text - Value</comment></data>
+  <data name="W2VFAoVd0Um9OUZCyr6VRA#Value" xml:space="preserve">
+    <value>2245</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Number / Text - Value</comment></data>
+  <data name="XT7fDmZzg0S4pzuXZpciBg#Value" xml:space="preserve">
+    <value>4325</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Number / Text - Value</comment></data>
+  <data name="YcemjXv0bkuDkbOqghEFcw#Value" xml:space="preserve">
+    <value>10</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Text / Container / Web Block / Number / Text - Value</comment></data>
+  <data name="+60gVkFOKUWR4o2aZxWpCA#Value" xml:space="preserve">
+    <value>Synergies</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Title / Text - Value</comment></data>
+  <data name="6zX95X3BfEe0p0gYHAE+6Q#Value" xml:space="preserve">
+    <value>Customer Demographic</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Title / Text - Value</comment></data>
+  <data name="9JsxXY0yrUCnsJBXalQBpA#Value" xml:space="preserve">
+    <value>Historic Trend</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Title / Text - Value</comment></data>
+  <data name="i4mJnFVPp02XkXcZ_WpFBg#Value" xml:space="preserve">
+    <value>Total Score</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Title / Text - Value</comment></data>
+  <data name="nPs18e1_LkKovx9aoydv7w#Value" xml:space="preserve">
+    <value>Competition</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Title / Text - Value</comment></data>
+  <data name="vK5WKzi2z0uHQfjbFNgUnQ#Value" xml:space="preserve">
+    <value>Expenses</value>
+  <comment>WhereCan / MainFlow / ScorecardBlock / Container / Container / Web Block / Title / Text - Value</comment></data>
+  <data name="qHM4HAspiEqi_Gt1K2+g3A#Label.2424595.1" xml:space="preserve">
+    <value>Next</value>
+  <comment>WhereCan / MainFlow / SearchBlock / Container / Button</comment></data>
+  <data name="TQl4QOCxsE65Cz0rT3XiVg#Label.2496083.1" xml:space="preserve">
+    <value>Prev</value>
+  <comment>WhereCan / MainFlow / SearchBlock / Container / Button</comment></data>
+  <data name="jXnTcaNPmEG5tZVrgEJOlw#Prompt.1369914266.1" xml:space="preserve">
+    <value>Business Type</value>
+  <comment>WhereCan / MainFlow / SearchBlock / Container / Container / BusinessTypeTextbox</comment></data>
+  <data name="NnunYgeex0eZzb9pCnMdMw#Value" xml:space="preserve">
+    <value>I want to run a</value>
+  <comment>WhereCan / MainFlow / SearchBlock / Container / Container / Text - Value</comment></data>
+  <data name="xocwik8cCUGHsjxsb_1iLA#Value" xml:space="preserve">
+    <value>in</value>
+  <comment>WhereCan / MainFlow / SearchBlock / Container / Container / Text - Value</comment></data>
+</root>
