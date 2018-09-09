@@ -6,14 +6,20 @@ import requests
 
 async def __val(handle: int, lat: float, lon: float):
     loop = asyncio.get_event_loop()
-    future = loop.run_in_executor(None, requests.get, "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=" + str(lat) + "&lon=" + str(lon))
+    future = loop.run_in_executor(None, requests.get, "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + str(lat) + "," + str(lon) + "&key=AIzaSyC0DraVSBKXdfu8SXS4ZBAmzyx_eON8OMk")
     response = await future
 
     if (response.status_code != 200):
         raise Exception("OSM Error: " + str(response.status_code))
 
     response = response.json()
-    return (handle, "house_number" in response["address"])
+    v = False
+    for comp in response["results"][0]["address_components"]:
+        if ("street_number" in comp["types"]):
+            v = True
+            break
+
+    return (handle,v) 
 
 def queue_get_all(q, i):
     items = []
@@ -58,7 +64,7 @@ def val(locs: list) -> list:
     size = 64
 
     while (left > size):
-        res.extend(inner_val(locs[index:size]))
+        res.extend(inner_val(locs[index:index+size]))
         left -= size
         index += size
 

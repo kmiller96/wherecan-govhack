@@ -23,16 +23,16 @@ def relativevector2latlon(vec):
     """Turns a relative vector (x, y) into (lat, long) tuple."""
     x, y = vec
     lat = MELBOURNE_CENTER_LAT + float(y)/111111
-    long = MELBOURNE_CENTER_LONG + float(x)/(111111*np.cos(MELBOURNE_CENTER_LAT))
-    return (lat, long)
+    lon = MELBOURNE_CENTER_LONG + float(x)/(111111*np.cos(MELBOURNE_CENTER_LAT))
+    return (lat, lon)
 
 
 def generate_markers(year):
     """Creates a list of markers for the ingestion of the fake data."""
     markers = []
-    for deg in np.linspace(0, 2*np.pi, 720):  # Equates to 1/2 degree steps
+    for deg in np.linspace(0, 2*np.pi, 360):  # Equates to 1/2 degree steps
         unit_vector = (np.cos(deg), np.sin(deg))
-        for x_step in np.linspace(0, 1e5, 1000):
+        for x_step in np.linspace(0, 1e4, 100):
             band_output = band_function(x_step, x0_func(year))
             marker_coord = relativevector2latlon((
                 unit_vector[0]*x_step,
