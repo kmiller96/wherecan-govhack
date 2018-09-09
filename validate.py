@@ -29,7 +29,6 @@ def queue_get_all(q, i):
 async def complete(q, tasks):
     for res in asyncio.as_completed(tasks):
         q.put(await res)
-        
 
 def inner_val(locs: list) -> list:
     q = queue.Queue()
