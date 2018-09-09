@@ -15,12 +15,11 @@ async def __val(handle: int, lat: float, lon: float):
     response = response.json()
     return (handle, "house_number" in response["address"])
 
-def queue_get_all(q):
+def queue_get_all(q, i):
     items = []
-    maxItemsToRetreive = 10
-    for numOfItemsRetrieved in range(0, maxItemsToRetreive):
+    for numOfItemsRetrieved in range(i):
         try:
-            if numOfItemsRetrieved == maxItemsToRetreive:
+            if numOfItemsRetrieved == i:
                 break
             items.append(q.get_nowait())
         except queue.Empty:
@@ -46,7 +45,7 @@ def val(locs: list) -> list:
     for i in range(len(locs)):
         response.append(None)
 
-    for ret in queue_get_all(q):
+    for ret in queue_get_all(q, len(locs)):
         response[ret[0]] = ret[1]
 
     return response
