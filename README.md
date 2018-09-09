@@ -7,3 +7,5 @@ All you need to give us is a suburb and a business type, in return we'll give yo
 We measure average tax, rent, wages and income by location and industry sector. We also look into foot traffic and nearby construction to measure how often customers are likely to come by.
 
 All of this can be filtered by a target demographic differentiated by sex, age, cultural background, and marital status.
+
+DEMO: https://halid.outsystemscloud.com/PreviewInDevices/?DeviceName=Smartphone&URL=/WhereCan/Home.aspx?_ts=636721046174549851

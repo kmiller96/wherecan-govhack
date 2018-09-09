@@ -4,14 +4,14 @@ MELBOURNE_CENTER_LAT = -37.815018
 MELBOURNE_CENTER_LONG = 144.946014
 
 BAND_FUNCTION_DEFAULT_SCALAR = 100
-BAND_FUNCTION_DEFAULT_TIMECONST = 10
+BAND_FUNCTION_DEFAULT_TIMECONST = 1000
 
 X0_START = 0  # Starts at the center of the city
 X0_SCALAR_CONST = 10  # Rate at which the x0 shifts
 
 def band_function(x, x0, a=BAND_FUNCTION_DEFAULT_SCALAR, b=BAND_FUNCTION_DEFAULT_TIMECONST):
     """Computes the band function."""
-    return a*np.exp(-(x-x0)**2/b)
+    return a*np.exp(-((x-x0)/b)**2)
 
 
 def x0_func(t):
@@ -30,9 +30,9 @@ def relativevector2latlon(vec):
 def generate_markers(year):
     """Creates a list of markers for the ingestion of the fake data."""
     markers = []
-    for deg in np.linspace(0, 2*np.pi, 360):  # Equates to 1/2 degree steps
+    for deg in np.linspace(0, 2*np.pi, 15):  # Equates to 1/2 degree steps
         unit_vector = (np.cos(deg), np.sin(deg))
-        for x_step in np.linspace(0, 1e4, 100):
+        for x_step in np.linspace(0, 1e4, 15):
             band_output = band_function(x_step, x0_func(year))
             marker_coord = relativevector2latlon((
                 unit_vector[0]*x_step,

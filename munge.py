@@ -14,13 +14,6 @@ for y in years:
     for i in range(len(temp)):
         ymap.append(y)
     
-print(marks[0])
-print(marks[1])
-print(marks[2])
-print(marks[3])
-print(marks[4])
-exit()
-
 print(len(marks))
 vald = validate.val(marks)
 print(len(vald))
